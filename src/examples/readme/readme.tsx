@@ -73,14 +73,14 @@ export function ReadmePage() {
   );
 }
 
-let markdownTable = `
-|              | virtuoso  | tanstack  | vitualized  |  window |
-|         ---: |   :---:   |   :---:   |    :---:    |  :---:  |
-`.trim();
+// let markdownTable = `
+// |              | virtuoso  | tanstack  | vitualized  |  window |
+// |         ---: |   :---:   |   :---:   |    :---:    |  :---:  |
+// `.trim();
 
-comparisonData.forEach(item => {
-  const row = `| ${item[4]} | ${item[0]} | ${item[1]} | ${item[2]} | ${item[3]} |`.trim();
-  markdownTable = markdownTable + `\n${row}`;
-});
+// comparisonData.forEach(item => {
+//   const row = `| ${item[4]} | ${item[0]} | ${item[1]} | ${item[2]} | ${item[3]} |`.trim();
+//   markdownTable = markdownTable + `\n${row}`;
+// });
 
-console.log(markdownTable)
+// console.log(markdownTable)
