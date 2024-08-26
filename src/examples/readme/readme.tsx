@@ -16,13 +16,13 @@ const ReadmeStyles = styled.div`
 `;
 
 const comparisonData = [
-  ['virtuoso', 'tanstack', 'window', 'virtualized', ''],
-  ['2022', '2020', '2018', '2015', 'год'],
-  ['5.1k', '5.3k', '15.7k', '26.2k', 'stars'],
-  ['30', '44', '2', '387', 'opened issue'],
-  ['689', '230', '623', '811', 'close issue'],
-  ['56.6', '27', '83', '>100', 'size kB(.cjs)'],
-  ['90', '115', '-', '150', 'mount performance ms'],
+  ['virtuoso', 'tanstack', 'virtualized', 'window', ''],
+  ['2022', '2020', '2015', '2018', 'год'],
+  ['5.1k', '5.3k', '26.2k', '15.7k', 'stars'],
+  ['30', '44', '387', '2', 'opened issue'],
+  ['689', '230', '811', '623', 'close issue'],
+  ['56.6', '27', '>100', '83', 'size kB(.cjs)'],
+  ['90', '115', '150', '?', 'mount performance ms'],
   ['typescript', 'typescript', 'flow', 'flow', 'dev stack'],
   ['+', '+', '+', '+', 'вертикальная виртуализация <br/> horizontal virtualization'],
   ['+', '+', '+', '+', 'горизонтальная виртуализация <br/> row virtualization'],
@@ -73,14 +73,14 @@ export function ReadmePage() {
   );
 }
 
-// let markdownTable = `
-// |              | virtuoso  | tanstack  | window  | virtualized  |
-// |         ---: |   :---:   |   :---:   |  :---:  |     :---:    |
-// `.trim();
+let markdownTable = `
+|              | virtuoso  | tanstack  | vitualized  |  window |
+|         ---: |   :---:   |   :---:   |    :---:    |  :---:  |
+`.trim();
 
-// comparisonData.forEach(item => {
-//   const row = `| ${item[4]} | ${item[0]} | ${item[1]} | ${item[2]} | ${item[3]} |`.trim();
-//   markdownTable = markdownTable + `\n${row}`;
-// });
+comparisonData.forEach(item => {
+  const row = `| ${item[4]} | ${item[0]} | ${item[1]} | ${item[2]} | ${item[3]} |`.trim();
+  markdownTable = markdownTable + `\n${row}`;
+});
 
-// console.log(markdownTable)
+console.log(markdownTable)

@@ -54,35 +54,36 @@ type DataItem {
 Составлена на основе документации разбработчика с примерами кода (или ссылками на них).  
 Наверное можно реализовать все хотелки во всех библиотеках, но для перечисленных в списке точно есть рецепты от производителя.
 
-|                                                                       |  virtuoso  |  tanstack  | window | virtualized |
-| --------------------------------------------------------------------: | :--------: | :--------: | :----: | :---------: |
-|                                                                   год |    2022    |    2020    |  2018  |    2015     |
-|                                                                 stars |    5.1k    |    5.3k    | 15.7k  |    26.2k    |
-|                                                          opened issue |     30     |     44     |   2    |     387     |
-|                                                           close issue |    689     |    230     |  623   |     811     |
-|                                                         size kB(.cjs) |    56.6    |     27     |   83   |    >100     |
-|                                                  mount performance ms |     90     |    115     |   -    |     150     |
-|                                                             dev stack | typescript | typescript |  flow  |    flow     |
-|            вертикальная виртуализация <br/> horizontal virtualization |     +      |     +      |   +    |      +      |
-|                 горизонтальная виртуализация <br/> row virtualization |     +      |     +      |   +    |      +      |
-|                     табличная виртуализация <br/> grid virtualization |     +      |     +      |   +    |      +      |
-|                        неупорядоченные элементы <br/> non-linear data |     -      |     -      |   +    |      -      |
-|                                 кирпичная кладка <br/> masonry layout |     -      |     -      |   +    |      -      |
-|                               скролл по индексу <br/> scroll to index |     +      |     +      |   +    |      +      |
-|                     фиксированные размеры элемента <br/> fixed sizing |     +      |     +      |   +    |      +      |
-|                     переменные размеры элемента <br/> variable sizing |     +      |     +      |   +    |      +      |
-|                       стикерирование элементов <br/> sticky/pin items |     +      |     +      |   +    |      +      |
-|                       бесконечный скролл <br/> infinityendless scroll |     +      |     +      |   +    |      +      |
-|                   динамические размеры элементов <br/> dynamic sizing |     +      |     +      |   +    |      -      |
-|                                  прокрутка окна <br/> window scroller |     +      |     +      |   +    |      -      |
-| плейсхолдер элемента при скроллинге <br/> placeholder while scrolling |     +      |     -      |   +    |      +      |
-|                      авторазмер по доступной области <br/> auto sizer |     -      |     -      |   +    |      +      |
-|               синхронизированный скролл <br/> synchronizing scrolling |     -      |     -      |   +    |      -      |
-|                                   отображение справа-налево <br/> RTL |     -      |     -      |   -    |      +      |
-|                        начальное позиционирование <br/> initial index |     +      |     -      |   -    |      -      |
-|                                 отображение подвала <br/> show footer |     +      |     -      |   -    |      -      |
-|       догрузить по требованию <br/> load on demand/press to load more |     +      |     -      |   -    |      -      |
-|                         видимый диапазон <br/> visible range callback |     +      |     -      |   -    |      -      |
-|      кастомизация скрола по клавишам <br/> custom keyboard navigation |     +      |     -      |   +    |      -      |
-|                                   группировка элементов <br/> grouped |     +      |     -      |   -    |      -      |
-|                             скроллинг до группы <br/> scroll to group |     +      |     -      |   -    |      -      |
+|              | virtuoso  | tanstack  | vitualized  |  window |
+|         ---: |   :---:   |   :---:   |    :---:    |  :---:  |
+| год | 2022 | 2020 | 2015 | 2018 |
+| stars | 5.1k | 5.3k | 26.2k | 15.7k |
+| opened issue | 30 | 44 | 387 | 2 |
+| close issue | 689 | 230 | 811 | 623 |
+| size kB(.cjs) | 56.6 | 27 | >100 | 83 |
+| mount performance ms | 90 | 115 | 150 | ? |
+| dev stack | typescript | typescript | flow | flow |
+| вертикальная виртуализация <br/> horizontal virtualization | + | + | + | + |
+| горизонтальная виртуализация <br/> row virtualization | + | + | + | + |
+| табличная виртуализация <br/> grid virtualization | + | + | + | + |
+| неупорядоченные элементы <br/> non-linear data | - | - | + | - |
+| кирпичная кладка <br/> masonry layout | - | - | + | - |
+| скролл по индексу <br/> scroll to index | + | + | + | + |
+| фиксированные размеры элемента <br/> fixed sizing | + | + | + | + |
+| переменные размеры элемента <br/> variable sizing | + | + | + | + |
+| стикерирование элементов <br/> sticky/pin items | + | + | + | + |
+| бесконечный скролл <br/> infinityendless scroll | + | + | + | + |
+| динамические размеры элементов <br/> dynamic sizing | + | + | + | - |
+| прокрутка окна <br/> window scroller | + | + | + | - |
+| плейсхолдер элемента при скроллинге <br/> placeholder while scrolling | + | - | + | + |
+| авторазмер по доступной области <br/> auto sizer | - | - | + | + |
+| синхронизированный скролл <br/> synchronizing scrolling | - | - | + | - |
+| отображение справа-налево <br/> RTL | - | - | - | + |
+| начальное позиционирование <br/> initial index  | + | - | - | - |
+| отображение подвала <br/> show footer  | + | - | - | - |
+| догрузить по требованию <br/> load on demand/press to load more  | + | - | - | - |
+| видимый диапазон <br/> visible range callback  | + | - | - | - |
+| кастомизация скрола по клавишам <br/> custom keyboard navigation | + | - | + | - |
+| группировка элементов <br/> grouped  | + | - | - | - |
+| скроллинг до группы <br/> scroll to group  | + | - | - | - |
+
